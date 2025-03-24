@@ -5,54 +5,113 @@
 
 % ----- Name + Contact Information -----
 \resumeheader[
-    firstname=John,
-    middleinitial=N,
-    lastname=Doe,
-    email=john.doe@example.com,
-    % phone=123-456-7890,
-    linkedin=johndoe,
-    github=johndoe,
-    % city=Town,
-    % state=State,
-    qrcode=./images/qr.png
+    firstname=Reed,
+    lastname=Markham,
+    email=reedmarkham@gmail.com,
+    github=reedmarkham,
+    city=Arlington,
+    state=VA
 ]
 
-\objective{A software engineering graduate with 2 years of work
-    experience at various internships seeking opportunities to develop
-    web/mobile applications for Company XYZ.}
+\objective{Experienced data scientist seeking opportunities to build end-to-end analytical solutions}
 
 % ----- Work Experience -----
 \section{Work Experience}
 
-\experience{Radiant Software Systems}{%
-    \role{Software Engineer}{2021 - 2024}{
+\experience{SiriusXM}{%
+    \role{Senior Product Analyst}{2022 - 2025}{
         \achievement{
 
-            Developed a mobile app in \tech{React Native} that was
-            downloaded 100k times on Google Play.
+            	Developed an \tech{XGBoost} model to predict trial conversion, outperforming benchmark by 2.5\%
 
         }
-    }
-    \role{Summer Intern}{2021}{
         \achievement{
 
-            Collaborated in an \tech{Agile/Scrum} team of 8 engineers to
-            deliver new features every 2 weeks.
+            	Improved accuracy of Pandora's album classifier by 1\% using \tech{Spark}, \tech{Hive}, and \tech{Airflow}
+
+        }
+        \achievement{
+
+            	Deployed infrastructure on \tech{AWS} to enable team of 50+ data scientists, using \tech{TypeScript} and \tech{GitHub Actions} for CI/CD
+ 
+        }
+        \achievement{
+
+       		Integrated \tech{PySpark} jobs with Google Sheets and Drive APIs to improve cross-functional processes using data from \tech{Hive}
+ 
+        }
+        \achievement{
+
+		Built UI using \tech{Streamlit}, \tech{Docker}, and \tech{GCP} to interact with \tech{BigQuery} by constructing queries from user inputs
+ 
+        }
+        \achievement{
+        		Implemented Netflix's {\href{https://dl.acm.org/doi/pdf/10.1145/2843948}{effective catalog size}} metric in \tech{SQL} to evaluate Pandora's algorithmic recommendations in support of measurement for C-suite OKR
+	}
+        \achievement{
+        		Advised junior analysts on best practices including query optimizations that led to 75\% reduction in runtimes
+	}
+        
+    }
+    \role{Product Analyst}{2019 - 2022}{
+        \achievement{
+
+           Analyzed big data using \tech{SQL} to optimize Pandora's content curation systems and content marketing campaigns behind \$1M+ spend
+
+        }
+        \achievement{
+
+            Built data pipelines using \tech{Airflow} to increase efficiency by 5-10\% per process
+
+        }
+        \achievement{
+
+            Designed and maintained \tech{Tableau} dashboards receiving 10K+ total views
 
         }
     }
 }
 
-% ----- Technical Projects -----
-\section{Technical Projects}
+\experience{Pandora (acquired by SiriusXM)}{%
+    \role{Associate Product Analyst}{2017 - 2019}{
+        \achievement{
 
-\project{Expressive Resume}{2021-2024}{
+            Drove \tech{A/B tests} for new features such as algorithmically-generated on-demand playlists
+        }
+        
+    }
+    \role{Product Analytics Intern}{2016}{
+        \achievement{
+
+            Built \tech{Tableau} dashboard receiving daily use by team of 10+ music programmers to date
+
+        }
+        \achievement{
+
+         First intern on team converted to full-time analyst
+
+        }
+    }
+}
+
+% ----- Portfolio -----
+\section{Portfolio}
+
+\project{\href{https://nbviewer.org/github/reedmarkham/meter-made/blob/main/meter_made.ipynb}{meter-made}}{2025 - Present}{
 
     \achievement{
-        Created a \tech{\LaTeX} class
-        that enables anyone to quickly
-        create a beautiful resume
-        and cover letter.
+        Predicted parking tickets in Washington, DC using \tech{scikit-learn}, and \tech{LightGBM}
+    }
+        \achievement{
+        Deployed model and surfaced in UI using \tech{FastAPI}, \tech{React}, and \tech{Docker}
+    }
+
+}
+
+\project{\href{https://github.com/reedmarkham/scotustician}{scotustician}}{2023 - Present}{
+
+    \achievement{
+        Run ETL for Supreme Court oral argument transcripts using \tech{FastAPI}, \tech{Docker}, and \tech{S3}
     }
 
 }
@@ -60,15 +119,8 @@
 % ----- Education -----
 \section{Education}
 
-\degree{B.S. Software Engineering \honors{Summa Cum Laude}}{Super Duper University}{2022}{
-    \achievement{Ranked \#15 out of 463 students}
-}
-
-% ----- Awards -----
-\section{Awards}
-
-\award{Employee of the Month}{Radiant Software Systems}{2023}{
-    \achievement{Did some amazing stuff that really benefitted the company}
+\degree{B.S. Industrial and Systems Engineering \honors{magna cum laude}}{University of Southern California}{2017}{
+    \achievement{Co-author of \href{https://dl.acm.org/doi/10.1145/2815833.2815847}{ACM conference paper}}
 }
 
 \end{document}
