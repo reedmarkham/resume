@@ -1,8 +1,6 @@
 # Reed Markham's Resume
 
-[![](https://badgen.net/github/license/thehale/expressive-resume)](https://github.com/thehale/expressive-resume/blob/master/LICENSE)
-
-An implementation of Joseph Hale's Expressive Resume (see above), integrating GitHub Actions to automatically compile PDF copies of newly-edited files.
+An implementation of Joseph Hale's [Expressive Resume](https://github.com/thehale/expressive-resume/blob/master/LICENSEhttps://badgen.net/github/license/thehale/expressive-resume) and Xu Cheng's [LaTeX Action](https://github.com/xu-cheng/latex-action), integrating a workflow to automatically compile PDF copies of newly-edited files.
 
 ## Usage
 
