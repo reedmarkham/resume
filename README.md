@@ -2,12 +2,9 @@
 
 [![](https://badgen.net/github/license/thehale/expressive-resume)](https://github.com/thehale/expressive-resume/blob/master/LICENSE)
 
-A beautiful resume/cover letter LaTeX template pair that are extraordinarily
-easy to use. 
+An implementation of Joseph Hale's Expressive Resume (see above), integrating GitHub Actions to automatically compile PDF copies of newly-edited files.
 
-Integrating GitHub Actions to automatically compile PDF copies of newly-edited files.
-
-## Implementation
+## Usage
 
 Clone this repo locally.
 
