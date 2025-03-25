@@ -40,12 +40,11 @@
 
 %% Add support for hyperlinks
 \RequirePackage{hyperref}
-\definecolor{linkcolour}{teal}
 \hypersetup{
     colorlinks,
     breaklinks,
-    urlcolor=linkcolour,  % Color them black
-    linkcolor=linkcolour  % Color them black
+    urlcolor=teal,
+    linkcolor=teal
 }
 
 %% Add support for nuanced list formatting
