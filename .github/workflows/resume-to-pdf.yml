@@ -1,4 +1,4 @@
-name: LateX Resume to PDF
+name: LaTeX Resume to PDF
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: LateX Cover Letter to PDF
+name: LaTeX Cover Letter to PDF
 
 on:
   push:
