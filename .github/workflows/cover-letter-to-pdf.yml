@@ -15,4 +15,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: reed-markham-cover-letter
-          path: src/cover-letter.pdf
+          path: cover-letter.pdf

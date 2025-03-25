@@ -15,4 +15,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: reed-markham-resume
-          path: src/resume.pdf
+          path: resume.pdf
