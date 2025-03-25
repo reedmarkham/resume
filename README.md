@@ -12,4 +12,4 @@ Edit any of the `.cls` files to adjust the base themes, types, etc.
 
 Edit either of the `.tex` files to adjust the actual resume or cover letter.
 
-Commits to any branch will generate PDFs of each as artifacts on the relevant workflow run.
+Commits to any branch that update any of these files above will generate PDFs as artifacts of the respective workflow run.
