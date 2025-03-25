@@ -40,7 +40,7 @@
 
 %% Add support for hyperlinks
 \RequirePackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.0,0.0}
+\definecolor{linkcolour}{teal}
 \hypersetup{
     colorlinks,
     breaklinks,
