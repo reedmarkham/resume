@@ -1,5 +1,8 @@
 name: Build LaTeX resume
-on: [push]
+on:
+  push:
+    paths:
+      - 'src/resume.tex'
 jobs:
   build_latex:
     runs-on: ubuntu-latest

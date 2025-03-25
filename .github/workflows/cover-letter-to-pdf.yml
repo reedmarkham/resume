@@ -1,5 +1,8 @@
 name: Build LaTeX cover letter
-on: [push]
+on:
+  push:
+    paths:
+      - 'src/cover-letter.tex'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
