@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'src/resume.tex'
+      - 'src/*.cls'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
