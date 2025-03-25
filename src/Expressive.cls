@@ -61,7 +61,7 @@
 \RequirePackage{titlesec}
 % Section Formatting
 \titleformat{\section}
-{\color{teal}\Large\scshape\raggedright}  % Shape
+{\color{black}\Large\scshape\raggedright}  % Shape
 {}
 {0em}
 {}
@@ -119,7 +119,7 @@
 \newcommand{\equivalent}{\textnormal{\textsc{equivalent}}}
 \newcommand{\honors}[1]{\textnormal{\emph{#1}}}
 \newcommand{\roletitle}[1]{\textbf{#1}}
-\newcommand{\tech}[1]{{\color{Brown}\textbf{#1}}}
+\newcommand{\tech}[1]{{\color{black}\textbf{#1}}}
 \newcommand{\tenure}[1]{\textbf{#1}}
 \newcommand{\achievement}[1]{%
     \begin{itemize}
