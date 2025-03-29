@@ -1,6 +1,6 @@
 # Reed Markham's Resume (and Cover Letter)
 
-Combining Joseph Hale's [Expressive Resume](https://github.com/thehale/expressive-resume/blob/master/LICENSEhttps://badgen.net/github/license/thehale/expressive-resume) and Xu Cheng's [LaTeX Action](https://github.com/xu-cheng/latex-action) to deploy a LaTeX-generated resume and cover letter as PDF files using GitHub Actions.
+Combining Joseph Hale's [Expressive Resume](https://github.com/thehale/expressive-resume/tree/main) and Xu Cheng's [LaTeX Action](https://github.com/xu-cheng/latex-action) to deploy a LaTeX-generated resume and cover letter as PDF files using GitHub Actions.
 
 ## Usage
 
