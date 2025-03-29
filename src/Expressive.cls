@@ -126,6 +126,12 @@
     \end{itemize}
     \vspace{\spacesmall}
 }
+\newcommand{\projachievement}[1]{%
+    \begin{itemize}
+        \item {\normalfont #1}  % Normal font (not bold)
+    \end{itemize}
+    \vspace{\spacesmall}
+}
 \newcommand{\degree}[4]{%
     \noindent\textbf{#1}, #2 \hfill \tenure{#3} \vspace{\spacesmall}\par
     #4
