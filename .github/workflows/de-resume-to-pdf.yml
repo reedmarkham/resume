@@ -1,4 +1,4 @@
-name: Build LaTeX resume
+name: Build DE LaTeX resume
 on:
   push:
     paths:
