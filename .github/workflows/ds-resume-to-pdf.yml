@@ -8,8 +8,6 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Put current date into a variable
-        run: echo "DT=$(date --rfc-3339=date)" >> ${GITHUB_ENV}
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: Compile LaTeX document
@@ -20,5 +18,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: reed-markham-ds-resume-${{env.DT}}
+          name: reed-markham-ds-resume
           path: src/ds-resume.pdf
