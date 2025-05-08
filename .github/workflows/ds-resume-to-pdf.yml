@@ -2,7 +2,7 @@ name: Build LaTeX resume
 on:
   push:
     paths:
-      - 'src/resume.tex'
+      - 'src/ds-resume.tex'
       - 'src/*.cls'
 jobs:
   build_latex:
@@ -14,9 +14,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: src
-          root_file: resume.tex
+          root_file: ds-resume.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: reed-markham-resume
-          path: src/resume.pdf
+          name: reed-markham-ds-resume
+          path: src/ds-resume.pdf
