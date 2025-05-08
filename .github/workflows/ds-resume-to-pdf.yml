@@ -8,6 +8,10 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
+      - name: Put current date into a variable
+        run: |
+          $NOW=& Get-Date -format yyyy-MM-dd
+          echo "NOW=$NOW" >> $env:GITHUB_ENV
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: Compile LaTeX document
@@ -18,5 +22,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: reed-markham-ds-resume
+          name: reed-markham-ds-resume-${{env.NOW}}
           path: src/ds-resume.pdf
