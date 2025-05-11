@@ -15,4 +15,4 @@ Combining Joseph Hale's [Expressive Resume](https://github.com/thehale/expressiv
 
 [Cover letter](https://github.com/reedmarkham/resume/actions/workflows/cover-letter-to-pdf.yml)
 
-These artifacts will be deleted by GitHub after 90 days. Please contact [Reed Markham](mailto:reedmarkham@gmail.com) if you need any help.
+These artifacts will be deleted by GitHub after 90 days.
