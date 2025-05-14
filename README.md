@@ -2,6 +2,8 @@
 
 Combining Joseph Hale's [Expressive Resume](https://github.com/thehale/expressive-resume/tree/main) and Xu Cheng's [LaTeX Action](https://github.com/xu-cheng/latex-action) to deploy a LaTeX-generated resume and cover letter as PDF files using GitHub Actions.
 
+It will also use [poppler-utils](https://github.com/elswork/poppler-utils) bash library to confirm that the resumes are no longer than 1 page in length.
+
 ## Usage
 
 * Clone this repo locally.
