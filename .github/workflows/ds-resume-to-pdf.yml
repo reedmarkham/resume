@@ -29,8 +29,14 @@ jobs:
             exit 1
           fi
           
+      - name: Format date and rename file
+        run: |
+          today=$(date +'%m%d')
+          mv src/ds-resume.pdf "ReedMarkhamDSResume${today}.pdf"
+          echo "RENAMED_FILE=ReedMarkhamDSResume${today}.pdf" >> $GITHUB_ENV
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
           name: reed-markham-ds-resume
-          path: src/ds-resume.pdf
+          path: ${{ env.RENAMED_FILE }}

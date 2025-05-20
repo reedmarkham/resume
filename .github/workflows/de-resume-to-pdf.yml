@@ -28,9 +28,15 @@ jobs:
             echo "Estimate: Remove enough content to fit on 1 page."
             exit 1
           fi
+      
+      - name: Format date and rename file
+        run: |
+          today=$(date +'%m%d')
+          mv src/de-resume.pdf "ReedMarkhamDEResume${today}.pdf"
+          echo "RENAMED_FILE=ReedMarkhamDEResume${today}.pdf" >> $GITHUB_ENV
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
           name: reed-markham-de-resume
-          path: src/de-resume.pdf
+          path: ${{ env.RENAMED_FILE }}
