@@ -150,7 +150,7 @@
     #3
 }
 \newcommand{\experience}[2]{%
-    \noindent\textsc{#1}\rule[2pt]{5cm}{0.5pt}
+    \noindent\textsc{#1}%\dotfill
 
     \vspace{\spacesmall}
 
