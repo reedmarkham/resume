@@ -1,4 +1,4 @@
-name: Build resume
+name: Resume CI/CD
 on:
   push:
     paths:

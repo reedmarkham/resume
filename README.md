@@ -1,5 +1,8 @@
 # Reed Markham's Resume (and Cover Letter)
 
+[![Resume CI/CD](https://github.com/reedmarkham/resume/actions/workflows/resume-to-pdf.yml/badge.svg)](https://github.com/reedmarkham/resume/actions/workflows/resume-to-pdf.yml)
+[![Cover Letter CI/CD](https://github.com/reedmarkham/resume/actions/workflows/cover-letter-to-pdf.yml/badge.svg)](https://github.com/reedmarkham/resume/actions/workflows/cover-letter-to-pdf.yml)
+
 Combining Joseph Hale's [Expressive Resume](https://github.com/thehale/expressive-resume/tree/main) and Xu Cheng's [LaTeX Action](https://github.com/xu-cheng/latex-action) to deploy a LaTeX-generated resume and cover letter as PDF files using GitHub Actions.
 
 It will also use [poppler-utils](https://github.com/elswork/poppler-utils) bash library to confirm that the resumes are no longer than 1 page in length.
