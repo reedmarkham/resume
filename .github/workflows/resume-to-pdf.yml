@@ -2,7 +2,7 @@ name: Build DE LaTeX resume
 on:
   push:
     paths:
-      - 'src/de-resume.tex'
+      - 'src/resume.tex'
       - 'src/*.cls'
 jobs:
   build_latex:
@@ -14,15 +14,15 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: src
-          root_file: de-resume.tex
+          root_file: resume.tex
 
       - name: Check PDF page count and fail if >1
         run: |
           sudo apt-get update
           sudo apt-get install -y poppler-utils
-          PAGE_COUNT=$(pdfinfo src/de-resume.pdf | awk '/^Pages:/ {print $2}')
+          PAGE_COUNT=$(pdfinfo src/resume.pdf | awk '/^Pages:/ {print $2}')
           if [ "$PAGE_COUNT" -gt 1 ]; then
-            CHAR_COUNT=$(wc -m < src/de-resume.tex)
+            CHAR_COUNT=$(wc -m < src/resume.tex)
             echo "PDF is $PAGE_COUNT pages. Please shorten your resume."
             echo "Your .tex file has $CHAR_COUNT characters."
             echo "Estimate: Remove enough content to fit on 1 page."
@@ -32,11 +32,11 @@ jobs:
       - name: Format date and rename file
         run: |
           today=$(date +'%m%d')
-          mv src/de-resume.pdf "ReedMarkhamDEResume${today}.pdf"
-          echo "RENAMED_FILE=ReedMarkhamDEResume${today}.pdf" >> $GITHUB_ENV
+          mv src/resume.pdf "ReedMarkhamResume${today}.pdf"
+          echo "RENAMED_FILE=ReedMarkhamResume${today}.pdf" >> $GITHUB_ENV
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: reed-markham-de-resume
+          name: reed-markham-resume
           path: ${{ env.RENAMED_FILE }}
