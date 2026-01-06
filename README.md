@@ -10,5 +10,5 @@ This project combines Joseph Hale's [Expressive Resume](https://github.com/theha
 * Clone this repo locally.
 * Edit any of the `.cls` files to modify the LaTeX classes used in the resume and/or cover letter.
 * Edit either of the `.tex` files to write the actual resume or cover letter.
-* Commit to any branch, updating any of these files above, to generate PDFs as artifacts of the respective workflow run (see below).
+* Commit to any branch, updating any of these files above, to generate PDFs as artifacts of the respective workflow run.
 * The GitHub Actions fails out if the resume is detected to be generated in a length exceeding 1 PDF page.
