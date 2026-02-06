@@ -13,6 +13,11 @@
 \LoadClass[letterpaper,10pt]{article}
 
 %% ----- Required Packages -----
+%% Font Configuration
+\RequirePackage[T1]{fontenc}
+\RequirePackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 %% Support non-ascii characters
 \RequirePackage[utf8]{inputenc}
 
