@@ -108,7 +108,7 @@
 %% ----- Custom Commands -----
 % Contact Information
 \newcommand{\nametitle}[2]{%
-    { \Huge #1 \textsc{#2} }\\
+    { \Huge #1 #2 }\\
 }
 \newcommand{\contactseparator}{
     \hspace{\spacesmall}\textbar\hspace{\spacesmall}
