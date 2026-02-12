@@ -13,6 +13,11 @@
 \LoadClass[letterpaper,10pt]{article}
 
 %% ----- Required Packages -----
+%% Font Configuration
+\RequirePackage[T1]{fontenc}
+\RequirePackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 %% Support non-ascii characters
 \RequirePackage[utf8]{inputenc}
 
@@ -103,7 +108,7 @@
 %% ----- Custom Commands -----
 % Contact Information
 \newcommand{\nametitle}[2]{%
-    { \Huge #1 \textsc{#2} }\\
+    { \Huge #1 #2 }\\
 }
 \newcommand{\contactseparator}{
     \hspace{\spacesmall}\textbar\hspace{\spacesmall}
