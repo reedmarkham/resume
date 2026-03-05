@@ -164,6 +164,14 @@
     \vspace{\spacesmall}
 }
 
+% Skills
+\newcommand{\skillcategory}[2]{%
+    \noindent\textbf{#1:} #2%
+}
+\newcommand{\skills}[1]{%
+    \noindent #1 \vspace{\spacesmall}
+}
+
 %% ----- Four Required Configurations -----
 \renewcommand{\normalsize}{\fontsize{12pt}{12pt}\selectfont}
 \setlength{\textwidth}{6.5in}
