@@ -166,7 +166,7 @@
 
 % Skills
 \newcommand{\skillcategory}[2]{%
-    \noindent\textbf{#1:} #2\\[\spacesmall]%
+    \noindent\textbf{#1:} #2\par\vspace{\spacesmall}%
 }
 \newcommand{\skills}[1]{%
     \noindent #1 \vspace{\spacesmall}
