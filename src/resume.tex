@@ -1,7 +1,9 @@
 \documentclass{ExpressiveResume}
 
+% ----- Resume -----
 \begin{document}
 
+% ----- Header -----
 \resumeheader[
     firstname=Reed,
     lastname=Markham,
@@ -13,23 +15,22 @@
     
 \summary{Data engineer with 8 years of experience building end-to-end data science applications.}
     
+% ----- Skills -----
 \section{\textbf{Technical Skills}}
 
-\skills{
+\skills{%
 
     \skillcategory{Programming Languages}{Python, Shell, SQL, TypeScript}
 
-\skillcategory{Cloud \& DevOps}{AWS, AWS CDK, AWS CloudFormation, AWS ECR, AWS EKS, AWS Glue, AWS Redshift, AWS Step Functions, GCP, GCP BigQuery, GCP Composer (Apache Airflow), GCP Dataproc (Apac[...]
-
+    \skillcategory{Cloud Services}{Amazon Web Services (AWS), Glue, Redshift, Google Cloud Platform (GCP), BigQuery, \mbox{Dataproc} (Apache Hive, PySpark), Composer (Apache Airflow)}
+    
+    \skillcategory{Software Deployment}{AWS CDK, CloudFormation, Step Functions, ECR, Docker, FastAPI, git, GitHub Actions} 
+    
+    \skillcategory{Data Visualization and User Interfaces}{Streamlit, Tableau} 
+    
 } 
 
-\experience{Portfolio}{
-\role{\href{https://www.github.com/reedmarkham/meter-made}{meter-made}}{}
-\achievement{
-    Achieved 98\% accuracy, precision, and recall predicting Washington, DC parking tickets using public data from 2010 to 2024, \tech{Python}, \tech{TypeScript}, and \tech{GCP Cloud Build} for \t[...]
-}
-}
-
+% ----- Experience -----
 \section{\textbf{Experience}}
 
 \experience{National Council of Architectural Registration Boards}{
@@ -41,15 +42,23 @@
     }
     
     \achievement{
-        Built \tech{AI (RAG)} chat tool and evaluation framework to support architect licensure inquiries, achieving response accuracy rate of 92\% using \tech{Python}, \tech{Postgres}, \tech{AWS [...]
+        Built \tech{AI (RAG)} chatbot to support architect licensure inquiries, achieving response accuracy rate of 92\% using \tech{Python}, \tech{Postgres}, \tech{AWS Bedrock}, \tech{ECR}, and \tech{Docker}
     }
     
      \achievement{
-        Automated QA reporting for 500+ key tables and views in \tech{AWS Redshift} data warehouse using \tech{Python}
-        }
+        Automated QA reporting for 500+ key tables and views in \tech{AWS Redshift} data warehouse using \tech{Python} and \tech{Shell}
+    }
+
+    \achievement{
+        Administered \tech{Tableau} for Data team of 4, including development of scripts using \tech{REST APIs} and \tech{Python} to monitor 400+ data sources and workbooks
+    }
 
     \achievement{
         Led implementations and team onboarding processes for industry standard tools such as \tech{dbt} and \tech{AWS SageMaker} for Data team of 4
+    }
+
+    \achievement{
+        
     }
 
 }
@@ -65,23 +74,19 @@
     }
     
     \achievement{
-        Automated previously-manual data pipelines using \tech{Airflow}, \tech{Hive SQL}, and \tech{PySpark} in order to manage content for music publishers and reduce time spent on business proce[...]
+        Reduced time spent on business process by 10\%, automating previously-manual data pipelines using \tech{Airflow}, \tech{Hive SQL}, and \tech{PySpark} in order to manage content at request of music publishers
     }
     
     \achievement{
-        Analyzed terabytes of data using \tech{Hive SQL} and \tech{GCP Dataproc} to identify $1M of annual royalty payment savings by debugging app instrumentation
+        Analyzed terabytes of data using \tech{Hive SQL} and \tech{GCP Dataproc} to identify \$1M of annual royalty payment savings due to resolution of app bugs
     }
     
     \achievement{
-        Deployed \tech{AWS SageMaker Studio} to support 50+ data scientists, using \tech{AWS CDK} for infrastructure-as-code and \tech{GitHub Actions} for \tech{CI/CD}
+        Deployed \tech{AWS SageMaker Studio} to support Data Science team of 50+ members, using \tech{AWS CDK} for infrastructure-as-code and \tech{GitHub Actions} for \tech{CI/CD}
     }
     
     \achievement{
-        Engineered new features in album classification pipeline that improved accuracy within key class by 10\% using \tech{Hive SQL}, \tech{Spark}, and \tech{Airflow}
-    }
-    
-    \achievement{
-        Migrated legacy \tech{XGBoost} model to \tech{Databricks} and \tech{AWS Redshift} to generate insights from \mbox{feature} importance derived from music listening for 1M+ users
+        Engineered new features in album classification ML pipeline that improved accuracy within key class of original albums by 10\% using \tech{Hive SQL}, \tech{Spark}, and \tech{Airflow}
     }
 
 }
